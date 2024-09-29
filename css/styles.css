@@ -245,3 +245,71 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija */
+    z-index: 1000; /* Sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilita scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% desde arriba, centrado horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido modal */
+    max-width: 600px; /* Ancho máximo */
+    position: relative;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-contenido img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.modal-contenido h2 {
+    margin-top: 0;
+}
+
+.modal-contenido p {
+    margin-bottom: 15px;
+}
+
+#modal-agregar-carrito {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Añadir animación de aparición */
+.modal-contenido {
+    animation-name: animacionModal;
+    animation-duration: 0.4s;
+}
+
+@keyframes animacionModal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

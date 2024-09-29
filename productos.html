@@ -29,36 +29,36 @@
             <h2>Todos los Productos</h2>
             <div class="productos-container">
                 <!-- Producto 1 -->
-                <div class="producto">
-                    <img src="images/producto1.jpg" alt="Producto 1">
+                <div class="producto" data-descripcion="Lapicero espactacular.">
+                    <img src="images/producto1.jpg" alt="Lapicero">
                     <h3>Producto 1</h3>
                     <p>$5.800.00</p>
                     <button class="btn-agregar">Agregar al Carrito</button>
                 </div>
                 <!-- Producto 2 -->
-                <div class="producto">
-                    <img src="images/producto2.jpg" alt="Producto 2">
+                <div class="producto" data-descripcion="Tijera increíble.">
+                    <img src="images/producto2.jpg" alt="Tijeras">
                     <h3>Producto 2</h3>
                     <p>$3.400.00</p>
                     <button class="btn-agregar">Agregar al Carrito</button>
                 </div>
                 <!-- Producto 3 -->
-                <div class="producto">
-                    <img src="images/producto3.jpg" alt="Producto 3">
+                <div class="producto" data-descripcion="Calculadora Espacial.">
+                    <img src="images/producto3.jpg" alt="Calculadora">
                     <h3>Producto 3</h3>
                     <p>$6.700.00</p>
                     <button class="btn-agregar">Agregar al Carrito</button>
                 </div>
                 <!-- Producto 4 -->
-                <div class="producto">
-                    <img src="images/producto4.jpg" alt="Producto 4">
+                <div class="producto" data-descripcion="Perforadora potente.">
+                    <img src="images/producto4.jpg" alt="Perforadora">
                     <h3>Producto 4</h3>
                     <p>$9.500.00</p>
                     <button class="btn-agregar">Agregar al Carrito</button>
                 </div>
                 <!-- Producto 5 -->
-                <div class="producto">
-                    <img src="images/producto5.jpg" alt="Producto 5">
+                <div class="producto" data-descripcion="Sacapuntas Divertido.">
+                    <img src="images/producto5.jpg" alt="Sacapuntas">
                     <h3>Producto 5</h3>
                     <p>$12.600.00</p>
                     <button class="btn-agregar">Agregar al Carrito</button>
@@ -72,6 +72,19 @@
     <footer>
         <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Ventana Modal para la Descripción del Producto -->
+<div id="modal-descripcion" class="modal">
+    <div class="modal-contenido">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <h2 id="modal-titulo"></h2>
+        <img id="modal-imagen" src="" alt="">
+        <p id="modal-precio"></p>
+        <p id="modal-descripcion-texto"></p>
+        <button id="modal-agregar-carrito" class="btn-agregar">Agregar al Carrito</button>
+    </div>
+</div>
+
 
     <!-- Enlace al archivo JavaScript -->
     <script src="js/app.js"></script>
