@@ -72,8 +72,6 @@ Versión Tableta
 
 Versión Escritorio
 
-(Asegúrate de agregar las capturas de pantalla reales en la carpeta images/ y actualizar los nombres de archivo si es necesario.)
-
 Contribuciones
 Las contribuciones son bienvenidas. Por favor, sigue los pasos a continuación:
 
@@ -83,9 +81,9 @@ Haz commit de tus cambios: git commit -m 'Agregar nueva función'.
 Haz push a la rama: git push origin mi-nueva-funcion.
 Abre un pull request.
 Autor
-Tu Nombre - Perfil de GitHub
+Tu Nombre - jersonrm
 Licencia
-Este proyecto se encuentra bajo la Licencia MIT - mira el archivo LICENSE para más detalles.
+Este proyecto se encuentra bajo la Licencia UMB - mira el archivo LICENSE para más detalles.
 
 Agradecimientos
 A los recursos y tutoriales que ayudaron en el desarrollo de este proyecto.
