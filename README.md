@@ -44,7 +44,7 @@ Página de Productos (productos.html)
 
 Muestra una lista de productos disponibles con imágenes, nombres, precios y un botón para agregar al carrito.
 
-Carrito de Compras (carrito.html)
+Carrito de Compras (carrito-min.html)
 
 Permite ver los productos agregados, modificar las cantidades, eliminar artículos y ver el total a pagar.
 
