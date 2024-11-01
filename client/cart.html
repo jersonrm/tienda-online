@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda-Online</title>
+    <title>Carrito - Tienda Online</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
     <header>
@@ -18,7 +19,20 @@
             </div>
         </nav>
     </header>
-    <main id="app"></main>
-    <script src="js/app.js" type="module"></script>
+
+    <main>
+        <h1>Tu Carrito</h1>
+        <div id="cart-container">
+            <!-- Los items del carrito se cargarán aquí -->
+        </div>
+        <div id="cart-summary">
+            <div class="total">
+                <h3>Total: $<span id="cart-total">0</span></h3>
+            </div>
+            <button id="checkout-btn" class="checkout-button">Proceder al pago</button>
+        </div>
+    </main>
+
+    <script src="js/cart.js"></script>
 </body>
 </html>

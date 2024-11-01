@@ -6,15 +6,16 @@
     <title>Productos - Tienda Online</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/products.css">
+    <script src="js/cart.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Shop</div>
             <div class="nav-links">
-                <a href="/">Home</a>
+                <a href="index.html">Home</a>
                 <a href="productos.html">Productos</a>
-                <a href="/cart">Carrito</a>
+                <a href="cart.html">Carrito</a>
                 <a href="/login">Login</a>
             </div>
         </nav>
@@ -53,7 +54,7 @@
                             <h3>${producto.nombre}</h3>
                             <p>${producto.descripcion || ''}</p>
                             <p class="precio">$${producto.precio}</p>
-                            <button class="comprar">Comprar</button>
+                            <button class="comprar" onclick='addToCartWithNotification(${JSON.stringify(producto).replace(/["]/g, "&quot;")})'>Comprar</button>
                         </div>
                     `;
                     contenedorProductos.innerHTML += productoHTML;
